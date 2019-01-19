@@ -19,9 +19,6 @@ public class Main {
                 "\t4. Subir estacion\n" +
                 "\t5. Bajar estacion\n" +
                 "\t6. Cambiar frecuencia\n" +
-                "\t7. Guardar estacion\n"+
-                "\t8. Eliminar estacion\n"+
-                "\t9. Ver estaciones guardadas\n"+
                 "\t10. Salir\n";
     }
     // aqui inica el programa
@@ -65,21 +62,7 @@ public class Main {
                             myRadio.changeToFM();
                         }
                         break;
-                    case 7:
-                        myRadio.favoriteStations();
-                        System.out.println("-----------------");
-                        System.out.println("Estacion Agregada a Favoritos");
-                        System.out.println("-----------------");
-                        break;
-                    case 8:
-                        myRadio.eliminateFavoriteStation();
-                        System.out.println("------------------");
-                        System.out.println("Estacion Eliminada de Favoritos");
-                        System.out.println("------------------");
-                        break;
-                    case 9:
-                        //Falta que imprima la arrayList de botones
-                        break;
+
                     case 10:
                         wantsToContinue = false;
                         break;

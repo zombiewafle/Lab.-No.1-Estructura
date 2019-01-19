@@ -51,7 +51,7 @@ public class Radio implements iRadio{
     public int getVolume() {
         return this.volume;
     }
-    
+
     public void volumeUp() {
         this.volume = Math.min(this.volume + VOLUME_INCREMENT, MAX_VOLUME);
     }
