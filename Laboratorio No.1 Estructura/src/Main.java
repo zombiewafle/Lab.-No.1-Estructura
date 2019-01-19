@@ -1,3 +1,5 @@
+import radio.Radio;
+
 import java.util.Scanner;
 
 
@@ -76,7 +78,7 @@ public class Main {
                         System.out.println("------------------");
                         break;
                     case 9:
-                        //Imprimir la lista
+                        //Falta que imprima la arrayList de botones
                         break;
                     case 10:
                         wantsToContinue = false;
