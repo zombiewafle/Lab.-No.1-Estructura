@@ -3,12 +3,12 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class Radio implements iRadio{
-    public double []  FAVORITE_FM = new double[12];
-    public double []  FAVORITE_AM = new double[12];
+
     private boolean isTurnedOn = false;
     private boolean isInFM = false;
     private int volume = 0;
     private double station = 1000.0;
+    private double estacion = 87.0;
 
     // CONSTANTES
     public static final double FM_STATION_INCREMENT = 0.5;
@@ -20,6 +20,8 @@ public class Radio implements iRadio{
     public static final int VOLUME_INCREMENT = 10;
     public static final int MAX_VOLUME = 100;
     public static final int MIN_VOLUME = 0;
+    public static final double []  FAVORITE_FM = new double[12];
+    public static final  double []  FAVORITE_AM = new double[12];
 
     @Override
     public boolean isTurnedOn() {

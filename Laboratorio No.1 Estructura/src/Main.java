@@ -2,6 +2,8 @@ import radio.Radio;
 
 import java.util.Scanner;
 
+import static radio.Radio.FAVORITE_AM;
+import static radio.Radio.FAVORITE_FM;
 
 public class Main {
     // funcion que muestra el menu
@@ -19,7 +21,8 @@ public class Main {
                 "\t4. Subir estacion\n" +
                 "\t5. Bajar estacion\n" +
                 "\t6. Cambiar frecuencia\n" +
-                "\t10. Salir\n";
+                "\t7. Guardar en favoritos\n"+
+                "\t8. Salir\n";
     }
     // aqui inica el programa
     public static void main (String[] args) {
@@ -63,7 +66,20 @@ public class Main {
                         }
                         break;
 
-                    case 10:
+                    case 7:
+                        myRadio.favoriteStations(0);
+                        System.out.println("----------------------------");
+                        System.out.println("La estacion ha sido guardada");
+                        System.out.println("-----------------------------");
+                        for(Double estacion:FAVORITE_FM){
+                            System.out.println(estacion);
+                        }
+                        for(Double station: FAVORITE_AM){
+                            System.out.println(station);
+                        }
+                        break;
+
+                    case 8:
                         wantsToContinue = false;
                         break;
                     default:
