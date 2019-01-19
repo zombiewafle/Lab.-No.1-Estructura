@@ -21,6 +21,7 @@ public class Radio implements iRadio{
     public static final int MAX_VOLUME = 100;
     public static final int MIN_VOLUME = 0;
 
+    @Override
     public boolean isTurnedOn() {
         return this.isTurnedOn;
     }
@@ -32,7 +33,7 @@ public class Radio implements iRadio{
     public void turnOff() {
         this.isTurnedOn = false;
     }
-
+    @Override
     public boolean isInFM() {
         return this.isInFM;
     }
@@ -50,7 +51,7 @@ public class Radio implements iRadio{
     public int getVolume() {
         return this.volume;
     }
-
+    
     public void volumeUp() {
         this.volume = Math.min(this.volume + VOLUME_INCREMENT, MAX_VOLUME);
     }
@@ -62,7 +63,7 @@ public class Radio implements iRadio{
     public double getStation() {
         return this.station;
     }
-
+    @Override
     public void stationUp() {
         if (this.isInFM) {
             this.station += FM_STATION_INCREMENT;
@@ -76,7 +77,7 @@ public class Radio implements iRadio{
             }
         }
     }
-
+    @Override
     public void stationDown() {
         if (this.isInFM) {
             this.station -= FM_STATION_INCREMENT;
