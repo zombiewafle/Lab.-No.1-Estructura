@@ -68,15 +68,17 @@ public class Main {
 
                     case 7:
                         myRadio.favoriteStations(0);
-                        System.out.println("----------------------------");
-                        System.out.println("La estacion ha sido guardada");
+                        System.out.println("-----------------------------");
+                        System.out.println("La estacion ha sido guardada ");
                         System.out.println("-----------------------------");
                         for(Double estacion:FAVORITE_FM){
                             System.out.println(estacion);
                         }
+                        System.out.println("------------------------------");
                         for(Double station: FAVORITE_AM){
                             System.out.println(station);
                         }
+                        System.out.println("------------------------------");
                         break;
 
                     case 8:
